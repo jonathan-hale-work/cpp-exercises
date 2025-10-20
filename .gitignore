@@ -1,0 +1,25 @@
+# Compiled files
+*.o
+*.out
+*.exe
+build/
+bin/
+
+# Exercism-specific
+*.tmc
+catch.hpp
+testlib/
+.exercism/
+
+# Editor and IDE files
+*.swp
+*.swo
+.vscode/
+.idea/
+*~
+.DS_Store
+
+# Code coverage and logs
+*.gcda
+*.gcno
+*.log

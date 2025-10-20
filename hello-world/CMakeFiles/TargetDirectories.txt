@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/exercism/cpp/hello-world/CMakeFiles/hello-world.dir
+/data/data/com.termux/files/home/exercism/cpp/hello-world/CMakeFiles/test_hello-world.dir
+/data/data/com.termux/files/home/exercism/cpp/hello-world/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/exercism/cpp/hello-world/CMakeFiles/rebuild_cache.dir
