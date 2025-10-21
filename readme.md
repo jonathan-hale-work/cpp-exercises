@@ -5,5 +5,6 @@ This project is for working on C++ skills by completing the Exercism.org C++ lea
 ## Project Structure
 
 ## Running an Exercise
+cmake -G "Unix Makefiles"
 
 ## Porting Exercises to thr Android Termux Environment

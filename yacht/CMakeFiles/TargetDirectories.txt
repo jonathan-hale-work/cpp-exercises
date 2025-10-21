@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/exercism/cpp/yacht/CMakeFiles/yacht.dir
+/data/data/com.termux/files/home/exercism/cpp/yacht/CMakeFiles/test_yacht.dir
+/data/data/com.termux/files/home/exercism/cpp/yacht/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/exercism/cpp/yacht/CMakeFiles/rebuild_cache.dir

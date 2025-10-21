@@ -1,7 +1,6 @@
 #pragma once
-
+#include <string>
 namespace yacht {
 
-// TODO: add your solution here
-
+	int score(int dice[5], std::string method); 
 }  // namespace yacht
