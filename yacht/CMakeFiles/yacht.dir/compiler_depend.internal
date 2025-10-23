@@ -2702,6 +2702,7 @@ yacht
  /data/data/com.termux/files/usr/lib/libunwind.a
  /system/lib64/libc.so
  /system/lib64/libdl.so
+ /system/lib64/liblog.so
  /system/lib64/libm.so
  /data/data/com.termux/files/home/exercism/cpp/yacht/CMakeFiles/yacht.dir/test/tests-main.cpp.o
  /data/data/com.termux/files/home/exercism/cpp/yacht/CMakeFiles/yacht.dir/yacht.cpp.o

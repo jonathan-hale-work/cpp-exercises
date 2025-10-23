@@ -21,12 +21,12 @@ TEST_CASE("Yacht", "[3060e4a5-4063-4deb-a380-a630b43a84b6]") {
     REQUIRE(50 == yacht::score({5, 5, 5, 5, 5}, "yacht"));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("Not Yacht", "[15026df2-f567-482f-b4d5-5297d57769d9]") {
     REQUIRE(0 == yacht::score({1, 3, 3, 2, 5}, "yacht"));
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("Ones", "[36b6af0c-ca06-4666-97de-5d31213957a4]") {
     REQUIRE(3 == yacht::score({1, 1, 1, 3, 5}, "ones"));
 }
