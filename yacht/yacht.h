@@ -2,5 +2,5 @@
 #include <string>
 namespace yacht {
 
-	int score(int dice[5], std::string method); 
+	int score(const std::array<int,5>& dice, std::string method); 
 }  // namespace yacht

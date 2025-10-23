@@ -1,1 +1,1 @@
-/data/data/com.termux/files/usr/bin/c++ -g -Xlinker --dependency-file=CMakeFiles/yacht.dir/link.d CMakeFiles/yacht.dir/yacht_test.cpp.o CMakeFiles/yacht.dir/yacht.cpp.o "CMakeFiles/yacht.dir/test/tests-main.cpp.o" -o yacht
+/data/data/com.termux/files/usr/bin/c++ -g -Xlinker --dependency-file=CMakeFiles/yacht.dir/link.d CMakeFiles/yacht.dir/yacht_test.cpp.o CMakeFiles/yacht.dir/yacht.cpp.o "CMakeFiles/yacht.dir/test/tests-main.cpp.o" -o yacht  -llog

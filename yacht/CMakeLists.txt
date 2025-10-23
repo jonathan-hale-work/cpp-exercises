@@ -17,6 +17,7 @@ else()
     set(exercise_cpp "")
 endif()
 
+
 # Use the common Catch library?
 if(EXERCISM_COMMON_CATCH)
     # For Exercism track development only
@@ -65,3 +66,4 @@ endif()
 
 # Run the tests on every build
 add_custom_target(test_${exercise} ALL DEPENDS ${exercise} COMMAND ${exercise})
+target_link_libraries(yacht PRIVATE log)
