@@ -2,6 +2,16 @@
 #include <array>
 namespace yacht {
 
+int sumeq(const std::array<int,5>& dice, int n){
+	int score = 0;
+	for (int i = 0; i < 5; i++) {
+		if(dice[i] == n) {
+			score +=n;
+		}
+	}
+	return score;
+}
+
 // TODO: add your solution here
 int score(const std::array<int,5>& dice, std::string method){
 	(void) dice;
@@ -17,7 +27,7 @@ int score(const std::array<int,5>& dice, std::string method){
 			return 0;
 		}
 	} else if (method == "ones") {
-		return 3;
+		return sumeq(dice, 1);
 	}
 	else return 0;
 }
