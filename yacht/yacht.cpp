@@ -36,6 +36,25 @@ int score(const std::array<int,5>& dice, std::string method){
 		return sumeq(dice, 4);
 	} else if (method == "fives") {
 		return sumeq(dice, 5);
+	} else if (method == "sixes") {
+		return sumeq(dice, 6);
+	} else if (method == "full house") {
+		int score = 0;
+		int counts[6] = {0};
+		for (int i = 0; i < 5; i++){
+			score += dice[i];
+			counts[dice[i]]++;
+		}
+		bool setOfTwo=false;
+		bool setOfThree=false;
+		for (int i = 0; i < 6; i++){
+			if (counts[i]==2) setOfTwo=true;
+			if (counts[i]==3) setOfThree=true;
+		}
+		if (setOfTwo && setOfThree)
+			return score;
+		else
+			return 0;
 	} 
 	else return 0;
 }
