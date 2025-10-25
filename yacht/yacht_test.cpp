@@ -50,7 +50,6 @@ TEST_CASE("Yacht counted as threes", "[f6125417-5c8a-4bca-bc5b-b4b76d0d28c8]") {
     REQUIRE(15 == yacht::score({3, 3, 3, 3, 3}, "threes"));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("Yacht of 3s counted as fives",
           "[464fc809-96ed-46e4-acb8-d44e302e9726]") {
     REQUIRE(0 == yacht::score({3, 3, 3, 3, 3}, "fives"));
@@ -60,6 +59,7 @@ TEST_CASE("Fives", "[d054227f-3a71-4565-a684-5c7e621ec1e9]") {
     REQUIRE(10 == yacht::score({1, 5, 3, 5, 3}, "fives"));
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("Sixes", "[e8a036e0-9d21-443a-8b5f-e15a9e19a761]") {
     REQUIRE(6 == yacht::score({2, 3, 4, 5, 6}, "sixes"));
 }

@@ -34,6 +34,8 @@ int score(const std::array<int,5>& dice, std::string method){
 		return sumeq(dice, 3);
 	} else if (method == "fours") {
 		return sumeq(dice, 4);
+	} else if (method == "fives") {
+		return sumeq(dice, 5);
 	} 
 	else return 0;
 }
