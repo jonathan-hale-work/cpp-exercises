@@ -28,7 +28,13 @@ int score(const std::array<int,5>& dice, std::string method){
 		}
 	} else if (method == "ones") {
 		return sumeq(dice, 1);
-	}
+	} else if (method == "twos") {
+		return sumeq(dice, 2);
+	} else if (method == "threes") {
+		return sumeq(dice, 3);
+	} else if (method == "fours") {
+		return sumeq(dice, 4);
+	} 
 	else return 0;
 }
 

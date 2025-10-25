@@ -30,7 +30,6 @@ TEST_CASE("Ones", "[36b6af0c-ca06-4666-97de-5d31213957a4]") {
     REQUIRE(3 == yacht::score({1, 1, 1, 3, 5}, "ones"));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("Ones, out of order", "[023a07c8-6c6e-44d0-bc17-efc5e1b8205a]") {
     REQUIRE(3 == yacht::score({3, 1, 1, 5, 1}, "ones"));
 }
@@ -51,6 +50,7 @@ TEST_CASE("Yacht counted as threes", "[f6125417-5c8a-4bca-bc5b-b4b76d0d28c8]") {
     REQUIRE(15 == yacht::score({3, 3, 3, 3, 3}, "threes"));
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("Yacht of 3s counted as fives",
           "[464fc809-96ed-46e4-acb8-d44e302e9726]") {
     REQUIRE(0 == yacht::score({3, 3, 3, 3, 3}, "fives"));
