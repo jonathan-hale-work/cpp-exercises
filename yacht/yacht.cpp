@@ -55,7 +55,17 @@ int score(const std::array<int,5>& dice, std::string method){
 			return score;
 		else
 			return 0;
-	} 
+	} else if (method == "four of a kind") {
+		int counts[7]={0};	
+		for(int i=0; i < 5; i++){
+			int die =dice[i];
+			counts[die]+=1;
+			if (counts[die] >= 4) {
+				return die*4;
+			}
+		}
+		return 0;
+	}
 	else return 0;
 }
 

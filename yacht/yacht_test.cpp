@@ -78,7 +78,6 @@ TEST_CASE("Two pair is not a full house",
     REQUIRE(0 == yacht::score({2, 2, 4, 4, 5}, "full house"));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("Four of a kind is not a full house",
           "[b90209c3-5956-445b-8a0b-0ac8b906b1c2]") {
     REQUIRE(0 == yacht::score({1, 4, 4, 4, 4}, "full house"));
@@ -98,6 +97,7 @@ TEST_CASE("Yacht can be scored{s Four of a Kind",
     REQUIRE(12 == yacht::score({3, 3, 3, 3, 3}, "four of a kind"));
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("Full house is not Four of a Kind",
           "[9f8ef4f0-72bb-401a-a871-cbad39c9cb08]") {
     REQUIRE(0 == yacht::score({3, 3, 3, 5, 5}, "four of a kind"));
