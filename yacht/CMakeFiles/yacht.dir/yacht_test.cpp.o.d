@@ -765,6 +765,7 @@ CMakeFiles/yacht.dir/yacht_test.cpp.o: \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__bit/byteswap.h \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__bit/endian.h \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__bit/has_single_bit.h \
+  /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/array \
   /data/data/com.termux/files/home/exercism/cpp/yacht/test/catch.hpp \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/vector \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__bit_reference \
@@ -792,7 +793,6 @@ CMakeFiles/yacht.dir/yacht_test.cpp.o: \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__format/unicode.h \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__format/extended_grapheme_cluster_table.h \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__format/width_estimation_table.h \
-  /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/array \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__locale \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__locale_dir/locale_base_api.h \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__locale_dir/locale_base_api/android.h \

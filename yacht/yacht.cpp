@@ -1,5 +1,4 @@
 #include "yacht.h"
-#include <array>
 namespace yacht {
 
 int sumeq(const std::array<int,5>& dice, int n){
