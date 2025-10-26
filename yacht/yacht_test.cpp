@@ -116,7 +116,6 @@ TEST_CASE("Four in order but not a little straight",
     REQUIRE(0 == yacht::score({1, 1, 2, 3, 4}, "little straight"));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("No pairs but not a little straight",
           "[cef35ff9-9c5e-4fd2-ae95-6e4af5e95a99]") {
     REQUIRE(0 == yacht::score({1, 2, 3, 4, 6}, "little straight"));
@@ -149,4 +148,5 @@ TEST_CASE("Yacht as choice", "[b524c0cf-32d2-4b40-8fb3-be3500f3f135]") {
     REQUIRE(10 == yacht::score({2, 2, 2, 2, 2}, "choice"));
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 #endif

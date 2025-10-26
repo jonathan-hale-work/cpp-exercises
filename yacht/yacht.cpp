@@ -75,6 +75,23 @@ int score(const std::array<int,5>& dice, std::string method){
 		if (counts[1]&&counts[2]&&counts[3]&&counts[4]&&counts[5])
 			return 30;
 		else return 0;
+	} else if (method == "big straight") {
+		
+		int counts[7]={0};	
+		for(int i=0; i < 5; i++){
+			int die =dice[i];
+			counts[die]+=1;
+		}
+		if (counts[2]&&counts[3]&&counts[4]&&counts[5]&&counts[6])
+			return 30;
+		else 
+			return 0;
+	} else if (method == "choice") {
+		int sum =0;
+		for(int i=0; i < 5; i++) {
+			sum +=dice[i];
+		}
+		return sum;
 	}
 	else return 0;
 }
