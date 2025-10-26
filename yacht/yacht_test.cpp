@@ -97,7 +97,6 @@ TEST_CASE("Yacht can be scored{s Four of a Kind",
     REQUIRE(12 == yacht::score({3, 3, 3, 3, 3}, "four of a kind"));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("Full house is not Four of a Kind",
           "[9f8ef4f0-72bb-401a-a871-cbad39c9cb08]") {
     REQUIRE(0 == yacht::score({3, 3, 3, 5, 5}, "four of a kind"));
@@ -117,6 +116,7 @@ TEST_CASE("Four in order but not a little straight",
     REQUIRE(0 == yacht::score({1, 1, 2, 3, 4}, "little straight"));
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("No pairs but not a little straight",
           "[cef35ff9-9c5e-4fd2-ae95-6e4af5e95a99]") {
     REQUIRE(0 == yacht::score({1, 2, 3, 4, 6}, "little straight"));
