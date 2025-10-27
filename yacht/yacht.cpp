@@ -1,10 +1,14 @@
 #include "yacht.h"
 namespace yacht {
 
+//Goal: use C++ STL features:
+//std::any_of, std::all_of, std::iterator, <algorithm> <numeric> std::accumulate
+//using, std::find, auto, begin, end , lambda function, assert
+
 int sumeq(const std::array<int,5>& dice, int n){
 	int score = 0;
-	for (int i = 0; i < 5; i++) {
-		if(dice[i] == n) {
+	for (auto die: dice) {
+		if(die == n) {
 			score +=n;
 		}
 	}
