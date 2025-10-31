@@ -1,4 +1,7 @@
 #include "yacht.h"
+#include <algorithm>
+#include <numeric>
+#include <iterator>
 namespace yacht {
 
 //Goal: use C++ STL features:
@@ -42,20 +45,13 @@ int score(const std::array<int,5>& dice, std::string method){
 	} else if (method == "sixes") {
 		return sumeq(dice, 6);
 	} else if (method == "full house") {
-		int score = 0;
-		int counts[6] = {0};
+		std::array<int, 7> counts  = {0};
 		for (int i = 0; i < 5; i++){
-			score += dice[i];
 			counts[dice[i]]++;
 		}
-		bool setOfTwo=false;
-		bool setOfThree=false;
-		for (int i = 0; i < 6; i++){
-			if (counts[i]==2) setOfTwo=true;
-			if (counts[i]==3) setOfThree=true;
-		}
-		if (setOfTwo && setOfThree)
-			return score;
+		if (std::find(std::begin(counts), std::end(counts),2) !=std::end(counts) &&
+			std::find(std::begin(counts), std::end(counts),3) !=std::end(counts))
+			return std::accumulate(std::begin(dice), std::end(dice), 0);
 		else
 			return 0;
 	} else if (method == "four of a kind") {
