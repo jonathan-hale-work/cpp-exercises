@@ -18,16 +18,21 @@ int sumeq(const std::array<int,5>& dice, int n){
 	return score;
 }
 
+std::array<int, 7> countDice(const std::array<int, 5>& dice) {
+ 	std::array<int, 7> counts ={0};
+	for (auto die: dice) {
+		if ((die >=1) && (die <= 6)) counts[die]++;
+	}		
+	return counts;
+}
+
 // TODO: add your solution here
 int score(const std::array<int,5>& dice, std::string method){
-	(void) dice;
-	(void) method;
+	
+	std::array<int, 7> counts =countDice(dice);
 
 	if (method == "yacht"){
-		if (	(dice[0] == dice[1]) && 
-			(dice[1] == dice[2]) && 
-			(dice[2] == dice[3]) && 
-			(dice[3] == dice[4])) {
+		if (std::find(counts.begin(), counts.end(), 5) != counts.end()) {
 			return 50;
 		} else {
 			return 0;
