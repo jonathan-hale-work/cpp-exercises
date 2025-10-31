@@ -46,8 +46,8 @@ int score(const std::array<int,5>& dice, std::string method){
 		return sumeq(dice, 6);
 	} else if (method == "full house") {
 		std::array<int, 7> counts  = {0};
-		for (int i = 0; i < 5; i++){
-			counts[dice[i]]++;
+		for (int die : dice){
+			counts[die]++;
 		}
 		if (std::find(std::begin(counts), std::end(counts),2) !=std::end(counts) &&
 			std::find(std::begin(counts), std::end(counts),3) !=std::end(counts))
