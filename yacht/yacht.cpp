@@ -68,26 +68,15 @@ int score(const std::array<int,5>& dice, std::string method){
 		}
 		else return 0;
 	} else if (method == "little straight") {
-		
-		int counts[7]={0};	
-		for(int i=0; i < 5; i++){
-			int die =dice[i];
-			counts[die]+=1;
-		}
-		if (counts[1]&&counts[2]&&counts[3]&&counts[4]&&counts[5])
-			return 30;
-		else return 0;
+	
+		int littleCount = std::count_if(std::begin(counts), std::prev(std::end(counts),1), [](int c){return (c >= 1);});
+		return (littleCount == 5) ?  30:0;
 	} else if (method == "big straight") {
 		
-		int counts[7]={0};	
-		for(int i=0; i < 5; i++){
-			int die =dice[i];
-			counts[die]+=1;
-		}
-		if (counts[2]&&counts[3]&&counts[4]&&counts[5]&&counts[6])
-			return 30;
-		else 
-			return 0;
+		
+		int bigCount = std::count_if(std::begin(counts) + 2, std::end(counts), [](int c){return (c >= 1);});
+
+		return (bigCount == 5) ?  30:0;
 	} else if (method == "choice") {
 		int sum =0;
 		for(int i=0; i < 5; i++) {
