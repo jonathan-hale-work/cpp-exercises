@@ -50,10 +50,6 @@ int score(const std::array<int,5>& dice, std::string method){
 	} else if (method == "sixes") {
 		return sumeq(dice, 6);
 	} else if (method == "full house") {
-		std::array<int, 7> counts  = {0};
-		for (int die : dice){
-			counts[die]++;
-		}
 		if (std::find(std::begin(counts), std::end(counts),2) !=std::end(counts) &&
 			std::find(std::begin(counts), std::end(counts),3) !=std::end(counts))
 			return std::accumulate(std::begin(dice), std::end(dice), 0);
@@ -78,11 +74,7 @@ int score(const std::array<int,5>& dice, std::string method){
 
 		return (bigCount == 5) ?  30:0;
 	} else if (method == "choice") {
-		int sum =0;
-		for(int i=0; i < 5; i++) {
-			sum +=dice[i];
-		}
-		return sum;
+		return std::accumulate(dice.begin(), dice.end(), 0);
 	}
 	else return 0;
 }
