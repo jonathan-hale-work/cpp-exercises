@@ -1,10 +1,4 @@
-// Enter your code below the lines of the families' information
-namespace estate_executor {
-	int assemble_account_number(int secret_modifier) {
-		return 0;
-	}
-}
-// Secret knowledge of the Zhang family:
+// Enter your code below the lines// Secret knowledge of the Zhang family:
 namespace zhang {
 int bank_number_part(int secret_modifier) {
     int zhang_part{8'541};
@@ -46,4 +40,14 @@ int code_fragment() { return 923; }
 }  // namespace blue
 }  // namespace garcia
 
-// Enter your code below
+// Enter your code below of the families' information
+namespace estate_executor {
+	int assemble_account_number(int secret_modifier) {
+		int zhang = zhang::bank_number_part(secret_modifier);
+		int khan  = khan::bank_number_part(secret_modifier);
+		int garcia  = garcia::bank_number_part(secret_modifier);
+
+		return zhang + khan + garcia;
+	}
+}
+
