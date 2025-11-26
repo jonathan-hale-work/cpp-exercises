@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/exercism/cpp/last-will/CMakeFiles/last-will.dir
+/data/data/com.termux/files/home/exercism/cpp/last-will/CMakeFiles/test_last-will.dir
+/data/data/com.termux/files/home/exercism/cpp/last-will/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/exercism/cpp/last-will/CMakeFiles/rebuild_cache.dir
