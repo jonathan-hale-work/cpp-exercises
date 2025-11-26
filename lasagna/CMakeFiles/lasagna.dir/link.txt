@@ -1,0 +1,1 @@
+/data/data/com.termux/files/usr/bin/c++ -g -Xlinker --dependency-file=CMakeFiles/lasagna.dir/link.d CMakeFiles/lasagna.dir/lasagna_test.cpp.o "CMakeFiles/lasagna.dir/test/tests-main.cpp.o" -o lasagna  -llog
