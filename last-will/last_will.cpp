@@ -49,5 +49,15 @@ namespace estate_executor {
 
 		return zhang + khan + garcia;
 	}
-}
 
+
+	int assemble_code(void) {
+		int red = zhang::red::code_fragment() +
+			khan::red::code_fragment() +
+			garcia::red::code_fragment();
+		int blue = zhang::blue::code_fragment() +
+			khan::blue::code_fragment() +
+			garcia::blue::code_fragment();
+		return red * blue;
+	}
+}
