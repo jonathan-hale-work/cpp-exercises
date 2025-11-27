@@ -29,7 +29,6 @@ TEST_CASE(
 
 TEST_CASE("score when eating dot", "[task_2]") { REQUIRE(scored(false, true)); }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("score when eating power pellet", "[task_2]") {
     REQUIRE(scored(true, false));
 }
@@ -66,4 +65,5 @@ TEST_CASE(
     REQUIRE(won(true, true, true));
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 #endif
