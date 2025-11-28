@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/exercism/cpp/log-levels/CMakeFiles/log-levels.dir
+/data/data/com.termux/files/home/exercism/cpp/log-levels/CMakeFiles/test_log-levels.dir
+/data/data/com.termux/files/home/exercism/cpp/log-levels/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/exercism/cpp/log-levels/CMakeFiles/rebuild_cache.dir

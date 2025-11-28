@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+60b424766c3b979cbe32f22117a47d64 CMakeFiles/test_freelancer-rates

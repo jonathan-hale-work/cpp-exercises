@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/exercism/cpp/freelancer-rates/CMakeFiles/freelancer-rates.dir
+/data/data/com.termux/files/home/exercism/cpp/freelancer-rates/CMakeFiles/test_freelancer-rates.dir
+/data/data/com.termux/files/home/exercism/cpp/freelancer-rates/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/exercism/cpp/freelancer-rates/CMakeFiles/rebuild_cache.dir
