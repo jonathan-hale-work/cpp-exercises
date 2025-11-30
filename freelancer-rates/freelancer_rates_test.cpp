@@ -30,7 +30,6 @@ TEST_CASE("a discount of 10 percent leaves 90 percent of the original price",
                  Catch::Matchers::WithinRel(126.0, 0.000001));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("it doesn't round", "[task_2]") {
     REQUIRE_THAT(apply_discount(111.11, 13.5),
                  Catch::Matchers::WithinRel(96.11015, 0.000001));
@@ -69,4 +68,5 @@ TEST_CASE("it applies the discount", "[task_4]") {
     REQUIRE(days_in_budget(480, 70, 20) == 1);
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 #endif

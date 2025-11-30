@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/exercism/cpp/vehicle-purchase/CMakeFiles/vehicle-purchase.dir
+/data/data/com.termux/files/home/exercism/cpp/vehicle-purchase/CMakeFiles/test_vehicle-purchase.dir
+/data/data/com.termux/files/home/exercism/cpp/vehicle-purchase/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/exercism/cpp/vehicle-purchase/CMakeFiles/rebuild_cache.dir
