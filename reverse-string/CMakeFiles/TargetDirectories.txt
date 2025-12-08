@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/exercism/cpp/reverse-string/CMakeFiles/reverse-string.dir
+/data/data/com.termux/files/home/exercism/cpp/reverse-string/CMakeFiles/test_reverse-string.dir
+/data/data/com.termux/files/home/exercism/cpp/reverse-string/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/exercism/cpp/reverse-string/CMakeFiles/rebuild_cache.dir
