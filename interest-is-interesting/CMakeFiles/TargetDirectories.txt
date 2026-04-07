@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/exercism/cpp/interest-is-interesting/CMakeFiles/interest-is-interesting.dir
+/data/data/com.termux/files/home/exercism/cpp/interest-is-interesting/CMakeFiles/test_interest-is-interesting.dir
+/data/data/com.termux/files/home/exercism/cpp/interest-is-interesting/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/exercism/cpp/interest-is-interesting/CMakeFiles/rebuild_cache.dir
